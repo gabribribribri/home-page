@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Temps radial</title>
+		<title>Radial Time</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
 		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+		<style>
+			html, body {
+				height: 100%;
+				margin: 0;
+			}
+			
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-family: "Tahoma", sans-serif;
+				text-align: center;
+				background: #262525;
+			}
+			
+			#time-container {
+				display: flex; /* Makes the children (buttons) align horizontally */
+				gap: 20px; /* Adds space between the buttons */
+				justify-content: center; /* Centers the buttons within the container */
+				padding: 0;
+				margin: 0;
+			}
+
+			#ggt {
+				font-family: "Times New Roman";
+				font-weight: 200;
+			}
+
+		</style>
 	</head>
 	<body>
-		<h1>Coucou les copines</h1>
-		<div id="bonsoir">Thing</div>
-	<script src="script.js"></script>
+		<div>
+			<h3>It is currently :</h3>
+
+			<div id="time-container">
+				<h1 id="radian-time"></h1>
+				<h1 id="ggt">Ggt</h1>
+			</div>
+
+			<script src="script.js"></script>
+		</div>
 	</body>
 </html>
