@@ -2,65 +2,17 @@
 <html>
 	<head>
 		<title>Home - Gabriel Gonguet</title>
-		<style>
-			html, body {
-				height: 100%;
-				margin: 0;
-			}
-			body {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				font-family: "Tahoma", sans-serif;
-				text-align: center;
-				background: #262525;
-			}
-			
-			#wip {
-				color: red;
-				font-family: "Courier New";
-				
-				padding: 0;
-				margin: 0;
-			}
-			
-			#where {
-				padding: 0;
-				margin: 0;
-				color: white;
-			}
-			
-			#button-container {
-				display: flex; /* Makes the children (buttons) align horizontally */
-				gap: 20px; /* Adds space between the buttons */
-				justify-content: center; /* Centers the buttons within the container */
-				margin-top: 20px; /* Add some space above the buttons */
-			}
-			
-			.nav-button {
-				padding: 10px 20px;
-				background-color: #444444; /* A nice green color */
-				color: white;
-				text-decoration: none; /* Removes underline from the link */
-				border: 3px solid #444444;
-				border-radius: 7px;
-				cursor: pointer;
-				transition: border 0.3s;
-			}
-			
-			.nav-button:hover {
-				border: 3px solid red;
-			}
-		</style>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div id="outter-most">
-			<p id="wip">[[work in progress]]</p>
+			<p id="wip">[[ work in progress ]]</p>
 			<h1 id="where">Where do you want to go ?</h1>
 
 			<div id="button-container">
-				<a href="/gameoflife/index.html" class="nav-button">Game of Life</a>
-				<a href="/time/index.html" class="nav-button">Radian Time</a>
+				<a href="/gameoflife" class="nav-button">Game of Life (Old)</a>
+				<a href="/radialtime" class="nav-button">Radial Time</a>
 			</div>
 		</div>
 	</body>

@@ -1,0 +1,29 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	font-size: 130%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Tahoma", sans-serif;
+	color: white;
+	text-align: center;
+	background: #262525;
+}
+
+#time-container {
+	display: flex;  
+	gap: 20px;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
+
+#currently {
+  margin: 0;
+  padding: 0;
+}
+
